@@ -1,12 +1,10 @@
-import { useState } from "react";
-
 interface Props {
   answers: string[];
+  selectedAnswer: number;
+  setSelectedAnswer: (index: number) => void;
 }
 
-function ListGroup({ answers }: Props) {
-  const [selectedAnswer, setSelectedAnswer] = useState(-1);
-
+function ListGroup({ answers, selectedAnswer, setSelectedAnswer }: Props) {
   const handleClick = (index: number) => {
     if (index === selectedAnswer) {
       setSelectedAnswer(-1);
@@ -25,6 +23,7 @@ function ListGroup({ answers }: Props) {
               : "list-group-item"
           }
           onClick={() => handleClick(index)}
+          key={index}
         >
           {answer}
         </li>

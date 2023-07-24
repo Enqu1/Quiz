@@ -1,10 +1,17 @@
-import ListGroup from "./components/ListGroup";
+import { useState } from "react";
+import LoadQuiz from "./LoadQuiz";
+import PlayQuiz from "./PlayQuiz";
 
 function App() {
+  const [quiz, setQuiz] = useState({});
+
   return (
     <>
-      <h1>What is the capital of France?</h1>
-      <ListGroup answers={["Rome", "Italy", "Paris", "London"]} />
+      {Object.keys(quiz).length === 0 ? (
+        <LoadQuiz QuizReturn={setQuiz} />
+      ) : (
+        <PlayQuiz quiz={quiz} />
+      )}
     </>
   );
 }

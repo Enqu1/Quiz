@@ -1,0 +1,66 @@
+{
+  "info": {
+    "name": "Binary Quiz",
+    "questions": 10
+  },
+  "questions": [
+    {
+      "question": "What is binary?",
+      "answers": [
+        "A sequence of 1s and 0s",
+        "The way a computer speaks",
+        "A useless code that is no longer used"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What kind of 'base' system is binary known as?",
+      "answers": ["Base 10", "Base 2", "Base 16"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What kind of number system is used in everyday life?",
+      "answers": ["Denary", "Binary", "A simple number system"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What would the denary number 199 be in binary?",
+      "answers": ["11000110", "10100111", "11000111"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What would the denary number 55 be in binary?",
+      "answers": ["00110111", "00101111", "01010111"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What would the denary number 222 be in binary?",
+      "answers": ["11010110", "10111110", "11011110"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What would 10110010 be as a denary number?",
+      "answers": ["168", "178", "188"],
+      "correctAnswer": 178
+    },
+    {
+      "question": "What would 00101110 be as a denary number?",
+      "answers": ["46", "36", "56"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What would 00100101 + 01000100 be as a binary number?",
+      "answers": ["10101001", "01101001", "01101011"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "What is an overflow error?",
+      "answers": [
+        "When the result of a binary calculation is too long for a computer to process",
+        "When something is spelt incorrectly when programming",
+        "When the computer program has been given the wrong command"
+      ],
+      "correctAnswer": 0
+    }
+  ]
+}
